@@ -1,0 +1,127 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <section id="mobile-nav"></section>
+      <!-- nav -->
+      <section id="nav-section">
+        <nav>
+          <div class="logo">
+            <h2>Camping search</h2>
+          </div>
+          <div class="nav__links">
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+            <a href="#">Register</a>
+            <div class="cart">
+              <img
+                class="cart-icon"
+                height="40px"
+                src="./images/cart.png"
+                alt="Cart"
+              />
+              <span class="cart-quantity">0</span>
+            </div>
+          </div>
+        </nav>
+      </section>
+      <!-- Header nav -->
+      <section id="header-section">
+        <div class="header__container">
+          <h1>Camping Search</h1>
+          <!-- <p>Provides you with the best camping locations</p> -->
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="timer">
+        <div class="timer__container">
+          <div class="offer-text">
+            <h3>
+              <span class="text-1"> Register now for this dog to be happy</span>
+              <span class="text-2"> before the time runs out!!</span>
+            </h3>
+          </div>
+          <div class="time">
+            <h3 class="timestamp">60:00</h3>
+            <img src="./images/pug.png" alt="timer-image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="camping-suggestions">
+        <h1>Camping spots</h1>
+        <div class="camping__container">
+          <figure class="item-container">
+            <img src="./images/location-1.jpg" alt="location-1" />
+            <h3 class="name">Location 1</h3>
+            <h4>
+              <!-- <span class="cross-price">$400</span> -->
+              <span class="now-price">$100</span>
+              <span class="cross-price">$100.1</span>
+            </h4>
+            <button class="cart-btn">Add to cart</button>
+          </figure>
+          <figure class="item-container">
+            <img src="./images/location-1.jpg" alt="location-1" />
+            <h3 class="name">Location 2</h3>
+            <h4>
+              <!-- <span class="cross-price">$400</span> -->
+              <span class="now-price">$100</span>
+              <span class="cross-price">$100.1</span>
+            </h4>
+            <button class="cart-btn">Add to cart</button>
+          </figure>
+          <figure class="item-container">
+            <img src="./images/location-1.jpg" alt="location-1" />
+            <h3 class="name">Location 3</h3>
+            <h4>
+              <!-- <span class="cross-price">$400</span> -->
+              <span class="now-price">$100</span>
+              <span class="cross-price">$100.1</span>
+            </h4>
+            <button class="cart-btn">Add to cart</button>
+          </figure>
+        </div>
+      </section>
+
+      <section id="cart">
+        <div class="cart__container">
+          <div class="part__1">
+            <h2>Shopping Cart</h2>
+            <img class="close-cart" src="./images/location-1.jpg" alt="Close" />
+          </div>
+          <div class="part__2 cart_part__2"></div>
+          <div class="part__3">
+            <h3>
+              "Price: "
+              <span class="total-price">$0</span>
+            </h3>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- <div class="part__1">3</div> -->
+    </footer>
+
+    <script src="./js/ScrollingHeader.js"></script>
+    <script type="module" src="./js/controller.js"></script>
+  </body>
+</html>
+
+<!--             <figure class="cart-item">
+              <div class="img"></div>
+              <div class="info"></div>
+              <div class="counters"></div>
+              <button class="delete-item-btn">Delete</button>
+            </figure> -->
