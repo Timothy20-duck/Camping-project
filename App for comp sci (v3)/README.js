@@ -13,8 +13,22 @@
 // 10/6
 // Have our click button replicate an element into the div contianer.
 
-// 10/7
+// 10/7 and 10/8
 // Create mock data for our places (create places)
+// const products = {
+//     figure1: {
+//         imageURL: "./images/figure1.jpg",
+//         name: "Figure 1",
+//         price: 6.99
+//     },
+
+//     figure2: {
+//         imageURL: "./images/figure2.jpg",
+//         name: "Figure 2",
+//         price: 8.99
+//     }
+// };
+// so model deal with data controller deal with click and view deal with displaying(innsertadjacaenthtml loop over everythi obj in model)
 
 // Additional features I might add
 // Maybe tool stuff ..
