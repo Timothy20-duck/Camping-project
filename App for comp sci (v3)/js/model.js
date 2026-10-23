@@ -1,7 +1,10 @@
 const Model = {
   user: {
     name: "Add to cart",
-    age: 25,
+  },
+  
+  sound: {
+    click: "./sounds/click.mp3",
   },
 
   setName(name) {
@@ -10,34 +13,67 @@ const Model = {
 
   availableLocations: {
       location1: {
-        imageURL: "./images/camping.jpg",
-        name: "location 1",
-        price: 1,
+        imageURL: "./images/location-1.jpg",
+        name: "A cold place",
+        price: 6,
       },
       location2: {
-        imageURL: "./images/camping.jpg",
-        name: "location 2",
-        price: 2,
+        imageURL: "./images/location-2.jpg",
+        name: "Warm mountain",
+        price: 30,
       },
       location3: {
-        imageURL: "./images/camping.jpg",
-        name: "location 3",
-        price: 3,
+        imageURL: "./images/location-3.jpg",
+        name: "Cold mountain",
+        price: 60,
       },
       location4: {
-        imageURL: "./images/camping.jpg",
-        name: "location 4",
-        price: 4,
+        imageURL: "./images/location-4.jpg",
+        name: "Remote island",
+        price: 15,
       },
       location5: {
-        imageURL: "./images/camping.jpg",
-        name: "location 5",
-        price: 5,
+        imageURL: "./images/location-5.jpg",
+        name: "The woods",
+        price: 50,
       },
       location6: {
-        imageURL: "./images/camping.jpg",
-        name: "location 6",
-        price: 6,
+        imageURL: "./images/location-6.jpg",
+        name: "The forest",
+        price: 5,
+      },
+  },
+
+  availableTools: {
+      tool1: {
+        imageURL: "./images/lantern.png",
+        name: "Lantern",
+        price: 15,
+      },
+      tool2: {
+        imageURL: "./images/sunscreen.png",
+        name: "Sunscreen",
+        price: 10,
+      },
+      tool3: {
+        imageURL: "./images/bucket.png",
+        name: "Bucket Hat",
+        price: 20,
+      },
+      tool4: {
+        imageURL: "./images/jacket.png",
+        name: "Warm Jacket",
+        price: 30,
+      },
+      tool5: {
+        imageURL: "./images/flare.png",
+        name: "Flare gun",
+        price: 50,
+      },
+      tool6: {
+        imageURL: "./images/warm-jacket.png",
+        name: "Warmer Jacket",
+        price: 50,
       },
   }
 };

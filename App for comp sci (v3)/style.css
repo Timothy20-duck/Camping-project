@@ -1,4 +1,4 @@
-/* This removes the margin above */
+
 
 header {
   height: 100vh;
@@ -93,7 +93,6 @@ main {
 }
 
 #nav-section nav {
-  /* background-color: green; */
   width: 100%;
   height: 100%;
   display: flex;
@@ -103,16 +102,13 @@ main {
 
 #nav-section nav .logo {
   width: 30%;
-  /* background-color: red; */
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   font-size: clamp(0.6rem, 2vw, 1rem);
-  /* font-size: 2rem; */
 }
 
 #nav-section nav .logo h2 {
-  /* font-weight: 600; */
   color: #f5cb36;
   text-shadow: 2px 2px 3px black;
 }
@@ -123,11 +119,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  /* background-color: blue; */
 }
 
 #nav-section nav .nav__links a {
-  /* background-color: red; */
   text-shadow: 2px 2px 3px black;
   letter-spacing: 0.1rem;
   color: white;
@@ -167,14 +161,8 @@ main {
   justify-content: center;
 }
 
-/* #header-section .header__container { */
-  /* font-size: clamp(2rem, 5vw, 4rem); */
-/* } */
-
 #header-section h1 {
   color: white;
-  /* font-size: clamp(0.6rem, 2vw, 1rem); */
-  /* font-size: 7.5rem; */
 }
 
 #header-section p {
@@ -184,11 +172,9 @@ main {
 #timer {
   width: 100%;
   height: 30vh;
-  /* background-color: rgb(41, 92, 16); */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-size: 50px; */
 }
 
 #timer .timer__container {
@@ -206,18 +192,15 @@ main {
   align-items: center;
   position: relative;
   overflow: hidden;
-  /* background-color: purple; */
 }
 
 #timer .timer__container .time h3 {
   font-size: 4rem;
-  /* font-size: clamp(1.5rem, 4vw, 3rem); */
   letter-spacing: 0.7rem;
   font-weight: 400;
   z-index: 2;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
   color: rgb(255, 255, 255);
-  /* background-color: purple; */
 }
 
 #timer .timer__container .time img {
@@ -232,7 +215,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: purple; */
 }
 
 #timer .timer__container .offer-text h3 {
@@ -242,7 +224,6 @@ main {
   display: grid;
   font-size: 3rem;
   font-weight: 500;
-  /* background-color: green; */
 }
 
 #timer .timer__container .offer-text h3 .text-1 {
@@ -251,7 +232,7 @@ main {
   color: white;
 }
 
-#camping-suggestions {
+.product-section {
   height: 55vh;
   width: 100%;
   justify-content: center;
@@ -259,64 +240,64 @@ main {
   display: flex;
   position: relative;
   flex-direction: column;
-  /* height: auto;
-  margin: 10vh 0px; */
-  /* background-color: rgb(60, 88, 225); */
-  /* font-size: 100px; */
-  /* display:Flex */
 }
 
 @media screen and (max-width: 520px) {
-  #camping-suggestions {
+  .product-section {
     height: 160vh;
   }
 }
 
 @media screen and (max-width: 920px) {
-  #camping-suggestions {
+  .product-section {
     height: 110vh;
   }
 }
 
-#camping-suggestions h1 {
+.product-section h1 {
   transform: translateY(-100%);
-  /* transform: translateX(-100%); */
-  /* font-size: clamp(0.5rem, w, 2rem); */
 }
 
-#camping-suggestions .camping__container {
+.product-section .product__container {
   width: 80%;
   height: 80%;
   border-radius: 1rem;
   background-color: rgb(49, 64, 41);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-rows: 1fr; */
   justify-content: center;
   align-content: center;
   padding: 3rem 6rem;
-  /* padding: 3rem 6rem; */
   gap: 4rem;
 }
 
+.product-section .tool__container {
+  background-color: rgb(16, 21, 13);
+}
+
+.product-section .product__container > * {
+  min-width: 0;
+  min-height: 0;
+}
+
+.product-section .product__container .item-container > * {
+  min-width: 0;
+  min-height: 0;
+}
+
 @media screen and (max-width: 920px) {
-  #camping-suggestions .camping__container {
-    /* width: 50%;
-    height: 50%; */
+  .product-section .product__container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 500px) {
-  #camping-suggestions .camping__container {
-    /* width: 20%;
-    height: 20%; */
+  .product-section .product__container {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-#camping-suggestions .camping__container figure {
-  /* background-color: red; */
+.product-section .product__container figure {
   height: 100%;
   border-radius: 1rem;
   display: flex;
@@ -324,35 +305,30 @@ main {
   align-items: center;
   background-color: rgb(92, 116, 84);
   flex-direction: column;
-  border-radius: 1rem;
 }
 
-#camping-suggestions .camping__container figure img {
-  background-color: blue;
+.product-section .product__container figure img {
   height: 50%;
   width: 30%;
 }
 
-#camping-suggestions .camping__container .item-container h3.name {
+.product-section .product__container .item-container h3.name {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   font-weight: 600;
   color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#camping-suggestions .camping__container .item-container h4 .cross-price {
-  /* font-size: 1rem; */
+.product-section .product__container .item-container h4 .cross-price {
   text-decoration: line-through;
-  /* color: white; */
 }
 
-#camping-suggestions .camping__container .item-container h4 .now-price {
-  /* font-size: 1rem; */
-  /* text-decoration: line-through; */
+.product-section .product__container .item-container h4 .now-price {
   color: white;
 }
 
-#camping-suggestions .camping__container .item-container button {
+.product-section .product__container .item-container button {
   margin-top: 1rem;
   cursor: pointer;
   background-color: rgb(218, 180, 55);
@@ -373,9 +349,7 @@ main {
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.5);
-  /* visibility: hidden; */
   transform: translateY(-100%);
-  /* transform: translateY(-100%); */
   transition: transform 1s ease;
   z-index: 10;
 } 
@@ -395,7 +369,6 @@ main {
 }
 
 #cart .cart__container .part__1{
-  /* background-color: rgb(101, 117, 234); */
   position: relative;
   height: 100%;
   width: 100%;
@@ -432,7 +405,7 @@ main {
 
 
 #cart .cart__container .part__2 div.cart-item{
-  background-color: red;
+  background-color: rgb(69, 25, 25);
   height: 100%;
   width: 100%;
   padding-bottom: 2rem;
@@ -455,7 +428,7 @@ main {
 
 
 #cart .cart__container .part__2 div.cart-item .info{
-  background-color:blue;
+
   Display: flex;
   align-items:center;
   justify-content:center;
@@ -478,7 +451,7 @@ main {
 
 
 #cart .cart__container .part__2 div.cart-item .counters{
-  background-color:purple;
+
   Display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -492,12 +465,12 @@ main {
   background-color: transparent;
   border: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #cart .cart__container .part__2 div.cart-item .counters .quantity{
   font-size: 3rem;
 
-  /* background-color: white; */
 }
 
 #cart .cart__container .part__2 div.cart-item .counters button.increase-btn{
@@ -506,6 +479,7 @@ main {
   background-color: transparent;
   border: none;
   font-weight: 700;
+  cursor: pointer;
 }
 
 #cart .cart__container .part__2 div.cart-item button.delete-item-btn{
@@ -524,7 +498,6 @@ main {
 }
 
 #cart .cart__container .part__3{
-  /* background-color: rgb(10, 240, 91); */
   width: 100%;
   height: 100%;
   display: flex;

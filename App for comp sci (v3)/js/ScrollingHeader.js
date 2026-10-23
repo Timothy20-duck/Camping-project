@@ -26,4 +26,3 @@ window.addEventListener("scroll", () => {
   }
 });
 
-console.log("breh");
